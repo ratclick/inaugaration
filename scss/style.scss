@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+$background: #A69A8E;
+$accent: #E2D3C2;
+$text: #55565D;
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: $background linear-gradient(to top right, $background, $accent);
+  color: $text;
+  padding: 1px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.message {
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  white-space: nowrap;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 72px;
+  opacity: 0;
+}
+
+.hint {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  animation: blink 1s infinite alternate;
+  width: 100%;
+}
+
+.egg {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

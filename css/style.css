@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@font-face {
+  font-family: 'CaviarDreams';
+  src: URL('../font/CaviarDreams_Bold.ttf');
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #A69A8E -webkit-gradient(linear, left bottom, right top, from(#A69A8E), to(#E2D3C2));
+  background: #A69A8E linear-gradient(to top right, #A69A8E, #E2D3C2);
+  color: #55565D;
+  padding: 1px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.message {
+  position: absolute;
+  top: -60px;
+  white-space: nowrap;
+  font-family: 'CaviarDreams', cursive;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin: 0;
+  font-size: 72px;
+  opacity: 0;
+}
+
+.hint {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-animation: blink 1s infinite alternate;
+          animation: blink 1s infinite alternate;
+  width: 100%;
+}
+
+.egg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
